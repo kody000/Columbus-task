@@ -1,0 +1,24 @@
+.grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.item {
+    display: flex;
+}
+
+.item > * {
+    width: 100%;
+}
+
+.empty {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #161616;
+    border: 1px dashed #242323;
+    border-radius: 20px;
+}

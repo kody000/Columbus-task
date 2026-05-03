@@ -1,9 +1,10 @@
 "use client";
 
 import styles from "./CartIcon.module.css";
+import {useCart} from "@/context/CartContext";
 
 export function CartIcon() {
-    const totalCount = 12;
+    const { totalCount } = useCart();
     const hasItems = totalCount > 0;
 
     return (

@@ -1,0 +1,148 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #161616;
+    border: 1px solid #242323;
+    border-radius: 10px;
+    overflow: hidden;
+    transition:
+            transform 150ms ease,
+            box-shadow 150ms ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.imageWrapper {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    background-color: #242323;
+    overflow: hidden;
+}
+
+.image {
+    object-fit: contain;
+    padding: 5px;
+}
+
+.badge {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    padding: 10px 15px;
+    background-color: #73a966;
+    color: #0a0a0a;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(31, 29, 26, 0.8);
+}
+
+.badgePercent {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.badgeName {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    flex: 1;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brandLogo {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.brandName {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #73a966;
+}
+
+.title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #fff;
+}
+
+.titleLink {
+    text-decoration: none;
+}
+
+.description {
+    margin: 0;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+.priceRow {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-top: auto;
+    padding-top: 10px;
+}
+
+.priceFinal {
+    font-size: 24px;
+    font-weight: 700;
+    color: #73a966;
+}
+
+.priceOriginal {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+.addButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    padding: 0 20px;
+    background-color: #73a966;
+    color: #0a0a0a;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    transition:
+            background-color 150ms ease,
+            opacity 150ms ease;
+}
+
+.addButton:hover:not(:disabled) {
+    background-color: #96db86;
+}
+
+.addButton:disabled {
+    opacity: 0.7;
+}
